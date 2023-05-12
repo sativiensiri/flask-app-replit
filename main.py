@@ -17,7 +17,7 @@ def login():
       password = request.form.get('password')
       if email != "" and password != "":
         print(f"We have {email} and {password}")
-        return render_template("register_page.html")
+        return render_template("home.html")
       else:
         return redirect(url_for('index'))
       
